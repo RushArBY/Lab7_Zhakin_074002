@@ -118,10 +118,10 @@ public class MainController {
 
         Cmanufacturer.setOnEditCommit((TableColumn.CellEditEvent<Market, String> e)->{
             TablePosition<Market, String> pos=e.getTablePosition();
-            String newmanufacturer=e.getNewValue();
+            String newManufacturer=e.getNewValue();
             int row = pos.getRow();
             Market col=e.getTableView().getItems().get(row);
-            col.setManufacturer(newmanufacturer);
+            col.setManufacturer(newManufacturer);
         });
 
         Csize.setOnEditCommit((TableColumn.CellEditEvent<Market, String> e)->{
